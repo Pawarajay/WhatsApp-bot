@@ -6,7 +6,9 @@ const { SYSTEM_PROMPT } = require("./aiPrompt");
 
 const MAX_HISTORY_ENTRIES = 24;
 const MAX_TOOL_ITERATIONS = 5;
-const MAX_RETRIES = 2;
+// const MAX_RETRIES = 2;
+const MAX_RETRIES = 4;
+
 
 const conversations = new Map(); // phone -> { history: [] (Gemini "contents"), cart: [] }
 
@@ -52,7 +54,8 @@ const callGeminiWithRetry = async (ai, params) => {
     } catch (error) {
       if (attempt < MAX_RETRIES && isRetryable(error)) {
         console.warn(`Gemini call failed (attempt ${attempt + 1}), retrying:`, error.message);
-        await sleep(1000 * (attempt + 1)); // 1s, then 2s
+        // await sleep(1000 * (attempt + 1)); // 1s, then 2s
+        await sleep(1500 * Math.pow(2, attempt)); // 1.5s, 3s, 6s, 12s
         continue;
       }
       throw error;
