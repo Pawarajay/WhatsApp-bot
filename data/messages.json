@@ -1,0 +1,652 @@
+[
+  {
+    "id": "msg_1789493974604_919876543210_gygujr",
+    "phone": "919876543210",
+    "customerName": "Test Customer",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi, do you have sourdough today?",
+    "timestamp": "2026-09-15T17:39:34.604Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789494530790_9309154732_oppmzt",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello from Bombay Sourdough",
+    "timestamp": "2026-09-15T17:48:50.790Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789495144540_9309154732_57vt8d",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello! This is a live test from Bombay Sourdough WhatsApp Inbox.",
+    "timestamp": "2026-09-15T17:59:04.539Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789495327141_9309154732_ghwbj7",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello from Bombay Sourdough Company! This is a test message to confirm WhatsApp integration is live.",
+    "timestamp": "2026-09-15T18:02:07.140Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789495455707_9309154732_0htbsm",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello! This is a test message from Bombay Sourdough Company to confirm WhatsApp integration is live.",
+    "timestamp": "2026-09-15T18:04:15.706Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789495599441_919309154732_ujn4uv",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello from Bombay Sourdough Company! This is an official test message to 9309154732.",
+    "timestamp": "2026-09-15T18:06:39.440Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789495660180_919309154732_n01jba",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi, what sourdough breads do you have today?",
+    "timestamp": "2026-09-15T18:07:40.179Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789496023856_919309154732_4j778k",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "hi",
+    "timestamp": "2026-09-15T18:13:43.856Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789496024271_919309154732_d7pvvk",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "hi",
+    "timestamp": "2026-09-15T18:13:44.270Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789496740806_919309154732_4ntm70",
+    "phone": "919309154732",
+    "customerName": "Aman",
+    "sender": "agent",
+    "isAI": false,
+    "text": "All messages are now actively logged in the backend with Customer Name, Mobile Number, and Message history.",
+    "timestamp": "2026-09-15T18:25:40.805Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789501406402_919876500111_0ziw44",
+    "phone": "919876500111",
+    "customerName": "Pooja Sharma",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi, what are your fresh baked items today?",
+    "timestamp": "2026-09-15T19:43:26.399Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789501411027_919876500111_frhmew",
+    "phone": "919876500111",
+    "customerName": "Pooja Sharma",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Pooja Sharma 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+    "timestamp": "2026-09-15T19:43:31.026Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789501612183_918551890493_buufyk",
+    "phone": "918551890493",
+    "customerName": "Owner",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello! This is a test message sent from your WhatsApp CRM dashboard.",
+    "timestamp": "2026-09-15T19:46:52.183Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789501634031_918551890493_h9bqa7",
+    "phone": "918551890493",
+    "customerName": "Owner",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello! This is a test message from your WhatsApp CRM dashboard.",
+    "timestamp": "2026-09-15T19:47:14.031Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789502994071_918551890493_alvgp5",
+    "phone": "918551890493",
+    "customerName": "Owner",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello from Bombay Sourdough Company! Your WhatsApp CRM is ready 🍞",
+    "timestamp": "2026-09-15T20:09:54.071Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789503193601_918551890493_j9la5m",
+    "phone": "918551890493",
+    "customerName": "Owner",
+    "sender": "agent",
+    "isAI": false,
+    "text": "Hello! 👋 We received your message at Bombay Sourdough Company. How can we help you today?",
+    "timestamp": "2026-09-15T20:13:13.600Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789503466747_918551890493_776puk",
+    "phone": "918551890493",
+    "customerName": "Owner",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi, can I order 2 Classical Sourdough Loaves?",
+    "timestamp": "2026-09-15T20:17:46.747Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789503470839_918551890493_325lye",
+    "phone": "918551890493",
+    "customerName": "Owner",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Owner 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+    "timestamp": "2026-09-15T20:17:50.839Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789641993212_919999888877_yry7y8",
+    "phone": "919999888877",
+    "customerName": "Anjali Sharma",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi, I want a sourdough loaf",
+    "timestamp": "2026-09-17T10:46:33.212Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789641995795_919999888877_0pp9gd",
+    "phone": "919999888877",
+    "customerName": "Anjali Sharma",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Anjali Sharma 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+    "timestamp": "2026-09-17T10:46:35.794Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789641996321_919999888877_4svuor",
+    "phone": "919999888877",
+    "customerName": "Anjali Sharma",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Also please add one croissant",
+    "timestamp": "2026-09-17T10:46:36.321Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789641997922_919999888877_34h70q",
+    "phone": "919999888877",
+    "customerName": "Anjali Sharma",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Anjali Sharma 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+    "timestamp": "2026-09-17T10:46:37.921Z",
+    "status": "sent"
+  },
+  {
+    "id": "3fddfc93-9b3f-4bdb-8b27-011cc33fbadf:1",
+    "phone": "918551890493",
+    "customerName": "Kapil Rade",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hii",
+    "timestamp": "2026-09-17T15:54:09.717Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789660451318_918551890493_ca4t05",
+    "phone": "918551890493",
+    "customerName": "Kapil Rade",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Kapil Rade 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+    "timestamp": "2026-09-17T15:54:11.317Z",
+    "status": "sent"
+  },
+  {
+    "id": "1a89e85f-a7e0-4b68-b061-e0d08101f72e:1",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "customer",
+    "isAI": false,
+    "text": "hru",
+    "timestamp": "2026-09-17T15:51:50.993Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789660312326_919309154732_s8g05s",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Varun 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+    "timestamp": "2026-09-17T15:51:52.326Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789660347648_919309154732_gtyeps",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "agent",
+    "isAI": false,
+    "text": "thank you varun we got you inquiery , these is manual message from CRM",
+    "timestamp": "2026-09-17T15:52:27.648Z",
+    "status": "sent"
+  },
+  {
+    "id": "cb829b33-03b9-4e19-840c-c70884c2ea3b:1",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "customer",
+    "isAI": false,
+    "text": "thanks bro we got it , varun from Whatsapp",
+    "timestamp": "2026-09-17T15:52:48.451Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789660370024_919309154732_o91qko",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Thank you for reaching out! Here are our options:\n🍞 Sourdough Breads\n🥐 Croissants\n🍪 Cookies\n🎁 Combos\n\nReply with what you'd like to order!",
+    "timestamp": "2026-09-17T15:52:50.023Z",
+    "status": "sent"
+  },
+  {
+    "id": "69e8cff8-af4f-4e8f-b8a0-649f50ba55cd:1",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "customer",
+    "isAI": false,
+    "text": "cookies",
+    "timestamp": "2026-09-17T15:53:07.946Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789660389670_919309154732_cuowfh",
+    "phone": "919309154732",
+    "customerName": "Varun",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Thank you for reaching out! Here are our options:\n🍞 Sourdough Breads\n🥐 Croissants\n🍪 Cookies\n🎁 Combos\n\nReply with what you'd like to order!",
+    "timestamp": "2026-09-17T15:53:09.670Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669139115_919867909384_me0zv0",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi",
+    "timestamp": "2026-09-17T18:18:59.114Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669140850_919867909384_bfsij5",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Rahul Mehta 👋 Your favourite sourdough is fresh today! Would you like to place your usual order?\n\nOptions:\n1️⃣ Reply *Place Order* to explore today's fresh bake\n2️⃣ Reply *Usual Order* to reorder your previous items",
+    "timestamp": "2026-09-17T18:19:00.849Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669147765_919867909384_3x1wbe",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Place Order",
+    "timestamp": "2026-09-17T18:19:07.764Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669149454_919867909384_jhmqdm",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "🍞 *Bombay Sourdough Company — Fresh Today*\n\nPlease choose an option to view our freshly baked items:\n\n1️⃣ 🍞 *Sourdough Breads*\n2️⃣ 🥐 *Croissants & Breads*\n3️⃣ 🍪 *Cookies*\n4️⃣ 🎁 *Combos & Treats*\n5️⃣ 🔄 *Order My Previous Order*\n\n_Reply with 1, 2, 3, 4, or 5 (or type the category name)._",
+    "timestamp": "2026-09-17T18:19:09.454Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669247451_919867909384_gfu9cq",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi",
+    "timestamp": "2026-09-17T18:20:47.450Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669249328_919867909384_nqy9ws",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Rahul Mehta 👋 Your favourite sourdough is fresh today! Would you like to place your usual order?\n\nOptions:\n1️⃣ Reply *Place Order* to explore today's fresh bake\n2️⃣ Reply *Usual Order* to reorder your previous items",
+    "timestamp": "2026-09-17T18:20:49.328Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669249785_919867909384_ujwp7b",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Place Order",
+    "timestamp": "2026-09-17T18:20:49.785Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669249787_919867909384_ol19dv",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "🍞 *Bombay Sourdough Company — Fresh Today*\n\nPlease choose an option to view our freshly baked items:\n\n1️⃣ 🍞 *Sourdough Breads*\n2️⃣ 🥐 *Croissants & Breads*\n3️⃣ 🍪 *Cookies*\n4️⃣ 🎁 *Combos & Treats*\n5️⃣ 🔄 *Order My Previous Order*\n\n_Reply with 1, 2, 3, 4, or 5 (or type the category name)._",
+    "timestamp": "2026-09-17T18:20:49.787Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669249874_919867909384_devp5r",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "1",
+    "timestamp": "2026-09-17T18:20:49.874Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669249890_919867909384_cd595f",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "🍞 *Sourdough Breads*\n\n1️⃣ *Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf)* — ₹325\n2️⃣ *Whole Wheat Sourdough Loaf with Sesame Seeds* — ₹350\n3️⃣ *Classic Country Loaf* — ₹250\n4️⃣ *Whole Wheat Plain Sourdough Loaf Bread* — ₹325\n5️⃣ *Sesame Seed Sourdough Loaf* — ₹275\n\n_Reply with the number (e.g. 1) to add to your cart, or reply *Menu* to go back._",
+    "timestamp": "2026-09-17T18:20:49.890Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669257058_919867909384_xiozni",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "1",
+    "timestamp": "2026-09-17T18:20:57.057Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669258729_919867909384_jo5ufh",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "🍞 *Bombay Sourdough Company — Fresh Today*\n\nPlease choose an option to view our freshly baked items:\n\n1️⃣ 🍞 *Sourdough Breads*\n2️⃣ 🥐 *Croissants & Breads*\n3️⃣ 🍪 *Cookies*\n4️⃣ 🎁 *Combos & Treats*\n5️⃣ 🔄 *Order My Previous Order*\n\n_Reply with 1, 2, 3, 4, or 5 (or type the category name)._",
+    "timestamp": "2026-09-17T18:20:58.729Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669259176_919867909384_5q050w",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Checkout",
+    "timestamp": "2026-09-17T18:20:59.176Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669259179_919867909384_792rwz",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "📋 *Delivery Details Confirmation:*\n\n👤 *Name:* Rahul Mehta\n📍 *Address:* Please provide your delivery address\n🕒 *Delivery Slot:* Tomorrow, 10–11 AM\n💳 *Payment:* Online / UPI (Pay Link)\n\nPlease reply with your *Delivery Address* (e.g. \"Flat 402, Sunshine Apts, Bandra West, Mumbai\").",
+    "timestamp": "2026-09-17T18:20:59.178Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669259249_919867909384_m9t85a",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Flat 402, Sunshine Apts, Bandra West, Mumbai",
+    "timestamp": "2026-09-17T18:20:59.249Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669259251_919867909384_eylzi3",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "📍 Address saved: *Flat 402, Sunshine Apts, Bandra West, Mumbai*\n\n📋 *Delivery Details Confirmation:*\n\n👤 *Name:* Rahul Mehta\n📍 *Address:* Flat 402, Sunshine Apts, Bandra West, Mumbai\n🕒 *Delivery Slot:* Tomorrow, 10–11 AM\n💳 *Payment:* Online / UPI (Pay Link)\n\nReply *Confirm* to place your order and receive your WhatsApp payment link.\n_Or reply with a new address if you wish to change it._",
+    "timestamp": "2026-09-17T18:20:59.251Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669259326_919867909384_i9qi4k",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Confirm",
+    "timestamp": "2026-09-17T18:20:59.326Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669272914_919867909384_b6i1ax",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "💳 *Payment Link:*\nPlease complete your payment of *₹325* here:\n👉 https://bombaysourdoughcompany.com/checkout/order-pay/3764/?pay_for_order=true&key=wc_order_9YRXnnyQtd8Cm\n\n━━━━━━━━━━━━━━━━━━━━\n✅ *Your order #BS3764 is confirmed!*\n🕒 *Delivery:* Tomorrow, 10–11 AM\n\n📦 *Summary:*\n• Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf) × 1 — ₹325\n*Total: ₹325*\n\n📍 *Delivering to:*\nRahul Mehta\nFlat 402, Sunshine Apts, Bandra West, Mumbai\n\nThank you for ordering with *Bombay Sourdough Company*! 🍞\n_Your fresh batch is scheduled for baking. Reply 'Hi' anytime to track or place a new order._",
+    "timestamp": "2026-09-17T18:21:12.913Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669282059_919867909384_k7oppy",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Hi",
+    "timestamp": "2026-09-17T18:21:22.058Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669283619_919867909384_jcxfqq",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "Hi Rahul Mehta 👋 Your favourite sourdough is fresh today! Would you like to place your usual order?\n\nOptions:\n1️⃣ Reply *Place Order* to explore today's fresh bake\n2️⃣ Reply *Usual Order* to reorder your previous items",
+    "timestamp": "2026-09-17T18:21:23.619Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284008_919867909384_6wbipu",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Place Order",
+    "timestamp": "2026-09-17T18:21:24.008Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669284009_919867909384_phu3la",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "🍞 *Bombay Sourdough Company — Fresh Today*\n\nPlease choose an option to view our freshly baked items:\n\n1️⃣ 🍞 *Sourdough Breads*\n2️⃣ 🥐 *Croissants & Breads*\n3️⃣ 🍪 *Cookies*\n4️⃣ 🎁 *Combos & Treats*\n5️⃣ 🔄 *Order My Previous Order*\n\n_Reply with 1, 2, 3, 4, or 5 (or type the category name)._",
+    "timestamp": "2026-09-17T18:21:24.009Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284066_919867909384_inrwyc",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "1",
+    "timestamp": "2026-09-17T18:21:24.066Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669284088_919867909384_bonj6q",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "🍞 *Sourdough Breads*\n\n1️⃣ *Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf)* — ₹325\n2️⃣ *Whole Wheat Sourdough Loaf with Sesame Seeds* — ₹350\n3️⃣ *Classic Country Loaf* — ₹250\n4️⃣ *Whole Wheat Plain Sourdough Loaf Bread* — ₹325\n5️⃣ *Sesame Seed Sourdough Loaf* — ₹275\n\n_Reply with the number (e.g. 1) to add to your cart, or reply *Menu* to go back._",
+    "timestamp": "2026-09-17T18:21:24.087Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284146_919867909384_m9rsa9",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "1",
+    "timestamp": "2026-09-17T18:21:24.146Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669284148_919867909384_aoba5r",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "✅ Added *Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf)* (1) to your cart!\n\n🛒 *Your Cart:*\n1. *Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf)*\n   Qty: 1 × ₹325 = *₹325*\n\n*Total: ₹325*\n\nOptions:\n• Reply *Checkout* to confirm delivery & pay\n• Reply *+* to increase quantity of last item\n• Reply *-* to decrease quantity\n• Reply *Menu* to add more items\n• Reply *Clear* to empty cart",
+    "timestamp": "2026-09-17T18:21:24.148Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284275_919867909384_zgfegc",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "+",
+    "timestamp": "2026-09-17T18:21:24.275Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669284277_919867909384_ab1x94",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "➕ Increased *Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf)* to 2.\n\n🛒 *Your Cart:*\n1. *Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf)*\n   Qty: 2 × ₹325 = *₹650*\n\n*Total: ₹650*\n\nOptions:\n• Reply *Checkout* to confirm delivery & pay\n• Reply *+* to increase quantity of last item\n• Reply *-* to decrease quantity\n• Reply *Menu* to add more items\n• Reply *Clear* to empty cart",
+    "timestamp": "2026-09-17T18:21:24.277Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284329_919867909384_wsd31j",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Checkout",
+    "timestamp": "2026-09-17T18:21:24.329Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669284331_919867909384_ep0o83",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "📋 *Delivery Details Confirmation:*\n\n👤 *Name:* Rahul Mehta\n📍 *Address:* Please provide your delivery address\n🕒 *Delivery Slot:* Tomorrow, 10–11 AM\n💳 *Payment:* Online / UPI (Pay Link)\n\nPlease reply with your *Delivery Address* (e.g. \"Flat 402, Sunshine Apts, Bandra West, Mumbai\").",
+    "timestamp": "2026-09-17T18:21:24.331Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284387_919867909384_ytsjeb",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Flat 402, Sunshine Apts, Bandra West, Mumbai",
+    "timestamp": "2026-09-17T18:21:24.387Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669284389_919867909384_gt0w78",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "📍 Address saved: *Flat 402, Sunshine Apts, Bandra West, Mumbai*\n\n📋 *Delivery Details Confirmation:*\n\n👤 *Name:* Rahul Mehta\n📍 *Address:* Flat 402, Sunshine Apts, Bandra West, Mumbai\n🕒 *Delivery Slot:* Tomorrow, 10–11 AM\n💳 *Payment:* Online / UPI (Pay Link)\n\nReply *Confirm* to place your order and receive your WhatsApp payment link.\n_Or reply with a new address if you wish to change it._",
+    "timestamp": "2026-09-17T18:21:24.389Z",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1789669284444_919867909384_sgr9v2",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "customer",
+    "isAI": false,
+    "text": "Confirm",
+    "timestamp": "2026-09-17T18:21:24.444Z",
+    "status": "received"
+  },
+  {
+    "id": "msg_1789669297230_919867909384_gwrf45",
+    "phone": "919867909384",
+    "customerName": "Rahul Mehta",
+    "sender": "agent",
+    "isAI": true,
+    "text": "💳 *Payment Link:*\nPlease complete your payment of *₹650* here:\n👉 https://bombaysourdoughcompany.com/checkout/order-pay/3765/?pay_for_order=true&key=wc_order_xRJs4SZH89s6k\n\n━━━━━━━━━━━━━━━━━━━━\n✅ *Your order #BS3765 is confirmed!*\n🕒 *Delivery:* Tomorrow, 10–11 AM\n\n📦 *Summary:*\n• Cheese Chilli Oil Spring Onion Sourdough Bread (400gms Loaf) × 2 — ₹650\n*Total: ₹650*\n\n📍 *Delivering to:*\nRahul Mehta\nFlat 402, Sunshine Apts, Bandra West, Mumbai\n\nThank you for ordering with *Bombay Sourdough Company*! 🍞\n_Your fresh batch is scheduled for baking. Reply 'Hi' anytime to track or place a new order._",
+    "timestamp": "2026-09-17T18:21:37.230Z",
+    "status": "sent"
+  }
+]

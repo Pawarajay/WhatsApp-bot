@@ -1,0 +1,104 @@
+{
+  "conversations": [
+    {
+      "phone": "+91 8459628112",
+      "name": "Rahul Mehta",
+      "lastMessage": "Hi Rahul 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+      "updatedAt": "2026-09-15T17:40:40.236Z"
+    },
+    {
+      "phone": "+91 9820155432",
+      "name": "Aisha Kapoor",
+      "lastMessage": "Thank you! The order arrived fresh.",
+      "updatedAt": "2026-09-15T16:11:34.462Z"
+    },
+    {
+      "phone": "+91 9811122334",
+      "name": "Vikram Shah",
+      "lastMessage": "Can I schedule delivery for tomorrow?",
+      "updatedAt": "2026-09-14T17:11:34.462Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_1",
+      "phone": "+91 8459628112",
+      "sender": "customer",
+      "text": "Hi",
+      "isAI": false,
+      "timestamp": "10:24 AM"
+    },
+    {
+      "id": "msg_2",
+      "phone": "+91 8459628112",
+      "sender": "agent",
+      "text": "Hi Rahul 👋 Welcome!\nWhat would you like to order today?",
+      "isAI": true,
+      "timestamp": "10:24 AM"
+    },
+    {
+      "id": "msg_3",
+      "phone": "+91 8459628112",
+      "sender": "customer",
+      "text": "What bakery products do you have?",
+      "isAI": false,
+      "timestamp": "10:25 AM"
+    },
+    {
+      "id": "msg_4",
+      "phone": "+91 8459628112",
+      "sender": "agent",
+      "text": "We have Sourdough Bread,\nCroissants, Cookies and Combos.",
+      "isAI": true,
+      "timestamp": "10:25 AM"
+    },
+    {
+      "id": "msg_5",
+      "phone": "+91 8459628112",
+      "sender": "customer",
+      "text": "1 Sourdough and 1 Croissant",
+      "isAI": false,
+      "timestamp": "10:26 AM"
+    },
+    {
+      "id": "msg_6",
+      "phone": "+91 8459628112",
+      "sender": "agent",
+      "text": "Sure! Your total is ₹500.\nWould you like to confirm your order?",
+      "isAI": true,
+      "timestamp": "10:26 AM"
+    },
+    {
+      "id": "msg_7",
+      "phone": "+91 8459628112",
+      "sender": "customer",
+      "text": "Yes, confirm my order.",
+      "isAI": false,
+      "timestamp": "10:27 AM"
+    },
+    {
+      "id": "msg_8",
+      "phone": "+91 8459628112",
+      "sender": "agent",
+      "text": "✅ Your order #BS1025\nis confirmed!",
+      "isAI": true,
+      "timestamp": "10:27 AM"
+    },
+    {
+      "id": "msg_1789494038339_2tn22j",
+      "phone": "+91 8459628112",
+      "sender": "customer",
+      "text": "I want 1 Croissant please",
+      "isAI": false,
+      "timestamp": "11:10 pm"
+    },
+    {
+      "id": "msg_1789494040236_ln6txi",
+      "phone": "+91 8459628112",
+      "sender": "agent",
+      "text": "Hi Rahul 👋 Your favourite sourdough is fresh today!\nWould you like to place your usual order?\n\nCategories:\n🍞 1. Sourdough Breads\n🥐 2. Croissants\n🍪 3. Cookies\n🎁 4. Combos\n🔄 5. Order My Previous Order",
+      "isAI": true,
+      "timestamp": "11:10 pm"
+    }
+  ]
+}
