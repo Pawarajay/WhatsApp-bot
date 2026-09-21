@@ -210,7 +210,9 @@ const generateReply = async ({ customerPhone, customerName, message }) => {
       });
     }
 
-    contents.push({ role: "function", parts: functionResponseParts });
+    // contents.push({ role: "function", parts: functionResponseParts });
+
+    contents.push({ role: "user", parts: functionResponseParts });
   }
 
   if (finalReplyText === null) {
