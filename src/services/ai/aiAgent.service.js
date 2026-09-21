@@ -1,117 +1,3 @@
-// const { OpenAI } = require("openai");
-// const env = require("../../config/env");
-// const storageService = require("../../db/storageService");
-// const { tools, executeTool } = require("./aiTools");
-// const { SYSTEM_PROMPT } = require("./aiPrompt");
-
-// const MAX_HISTORY_MESSAGES = 16;
-// const MAX_TOOL_ITERATIONS = 5;
-
-// const conversations = new Map(); // phone -> { history: [], cart: [] }
-
-// const getConversation = (phone) => {
-//   const normalized = storageService.normalizePhone(phone) || phone;
-//   if (!conversations.has(normalized)) {
-//     conversations.set(normalized, { history: [], cart: [] });
-//   }
-//   return conversations.get(normalized);
-// };
-
-// const resetConversation = (phone) => {
-//   const normalized = storageService.normalizePhone(phone) || phone;
-//   conversations.delete(normalized);
-//   return getConversation(normalized);
-// };
-
-// const trimHistory = (history) =>
-//   history.length > MAX_HISTORY_MESSAGES ? history.slice(history.length - MAX_HISTORY_MESSAGES) : history;
-
-// const getOpenAIClient = () => {
-//   if (!env.openai.apiKey) {
-//     throw new Error("OPENAI_API_KEY is not configured");
-//   }
-//   return new OpenAI({ apiKey: env.openai.apiKey });
-// };
-
-// const generateReply = async ({ customerPhone, customerName, message }) => {
-//   const client = getOpenAIClient();
-//   const normalizedPhone = storageService.normalizePhone(customerPhone) || customerPhone;
-//   const convo = getConversation(normalizedPhone);
-
-//   convo.history.push({ role: "user", content: message });
-//   convo.history = trimHistory(convo.history);
-
-//   const messages = [{ role: "system", content: SYSTEM_PROMPT(customerName) }, ...convo.history];
-
-//   let finalReplyText = null;
-//   let iterations = 0;
-
-//   while (iterations < MAX_TOOL_ITERATIONS && finalReplyText === null) {
-//     iterations += 1;
-
-//     const completion = await client.chat.completions.create({
-//       model: env.openai.model || "gpt-4o-mini",
-//       messages,
-//       tools,
-//       tool_choice: "auto",
-//       temperature: 0.4,
-//     });
-
-//     const assistantMessage = completion.choices[0].message;
-//     messages.push(assistantMessage);
-
-//     const toolCalls = assistantMessage.tool_calls;
-//     if (!toolCalls || toolCalls.length === 0) {
-//       finalReplyText = assistantMessage.content || "Sorry, could you rephrase that?";
-//       break;
-//     }
-
-//     for (const toolCall of toolCalls) {
-//       let args = {};
-//       try {
-//         args = JSON.parse(toolCall.function.arguments || "{}");
-//       } catch (e) {
-//         args = {};
-//       }
-
-//       let toolResult;
-//       try {
-//         toolResult = await executeTool(toolCall.function.name, args, {
-//           phone: normalizedPhone,
-//           customerName,
-//           conversation: convo,
-//         });
-//       } catch (toolError) {
-//         toolResult = { error: toolError.message || "Tool execution failed" };
-//       }
-
-//       messages.push({
-//         role: "tool",
-//         tool_call_id: toolCall.id,
-//         content: JSON.stringify(toolResult),
-//       });
-//     }
-//   }
-
-//   if (finalReplyText === null) {
-//     finalReplyText = "Sorry, I'm having trouble processing that right now — let me get a team member to help you.";
-//   }
-
-//   convo.history.push({ role: "assistant", content: finalReplyText });
-//   convo.history = trimHistory(convo.history);
-
-//   return { reply: finalReplyText };
-// };
-
-// module.exports = { generateReply, getConversation, resetConversation };
-
-
-
-
-//testing
-
-
-
 const { GoogleGenAI } = require("@google/genai");
 const env = require("../../config/env");
 const storageService = require("../../db/storageService");
@@ -120,6 +6,7 @@ const { SYSTEM_PROMPT } = require("./aiPrompt");
 
 const MAX_HISTORY_ENTRIES = 24;
 const MAX_TOOL_ITERATIONS = 5;
+const MAX_RETRIES = 2;
 
 const conversations = new Map(); // phone -> { history: [] (Gemini "contents"), cart: [] }
 
@@ -151,6 +38,28 @@ const getClient = () => {
   return client;
 };
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const isRetryable = (error) => {
+  const msg = error?.message || "";
+  return msg.includes("UNAVAILABLE") || msg.includes("503") || msg.includes("overloaded");
+};
+
+const callGeminiWithRetry = async (ai, params) => {
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await ai.models.generateContent(params);
+    } catch (error) {
+      if (attempt < MAX_RETRIES && isRetryable(error)) {
+        console.warn(`Gemini call failed (attempt ${attempt + 1}), retrying:`, error.message);
+        await sleep(1000 * (attempt + 1)); // 1s, then 2s
+        continue;
+      }
+      throw error;
+    }
+  }
+};
+
 const generateReply = async ({ customerPhone, customerName, message }) => {
   const ai = getClient();
   const normalizedPhone = storageService.normalizePhone(customerPhone) || customerPhone;
@@ -166,15 +75,22 @@ const generateReply = async ({ customerPhone, customerName, message }) => {
   while (iterations < MAX_TOOL_ITERATIONS && finalReplyText === null) {
     iterations += 1;
 
-    const response = await ai.models.generateContent({
-      // model: env.gemini.model || "gemini-2.5-flash",
-      model: env.gemini.model || "gemini-3.6-flash",
-      contents,
-      config: {
-        systemInstruction: SYSTEM_PROMPT(customerName),
-        tools: [{ functionDeclarations: toolDeclarations }],
-      },
-    });
+    let response;
+    try {
+      response = await callGeminiWithRetry(ai, {
+        model: env.gemini.model || "gemini-3.6-flash",
+        contents,
+        config: {
+          systemInstruction: SYSTEM_PROMPT(customerName),
+          tools: [{ functionDeclarations: toolDeclarations }],
+        },
+      });
+    } catch (error) {
+      console.error("Gemini call failed after retries:", error.message);
+      finalReplyText =
+        "Sorry, our assistant is a bit busy right now — please try again in a moment, or a team member will follow up with you.";
+      break;
+    }
 
     const candidateContent = response.candidates?.[0]?.content;
     if (candidateContent) {
@@ -210,8 +126,7 @@ const generateReply = async ({ customerPhone, customerName, message }) => {
       });
     }
 
-    // contents.push({ role: "function", parts: functionResponseParts });
-
+    // Gemini expects the function result back with role "user", not "function"
     contents.push({ role: "user", parts: functionResponseParts });
   }
 
